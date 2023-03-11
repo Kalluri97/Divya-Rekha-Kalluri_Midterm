@@ -1,0 +1,163 @@
+
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+  }
+.navbar{
+  display: flex;
+     height: 50px;
+    font-weight: 700;
+    justify-content:space-evenly;
+     background-color: #d8cbdb;
+    grid-area: navbar;
+   border-radius: var(--main-radius);
+    padding: var(--main-padding);
+  
+}
+
+
+#profile pic{
+ 
+grid-area: about;
+height: auto;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+#about
+{
+grid-area: about;
+ height: auto;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+
+#papers{
+ text-align: left;
+ grid-area: papers;
+  height: auto;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+
+#experience{
+ 
+  grid-area: experience;
+    height: auto;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+  }
+  
+  
+#Hobbies{
+ 
+  grid-area: hobbies;
+    height: auto;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+  }
+
+  #Gallery{
+ 
+    grid-area: Gallery;
+      height: auto;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    }
+    
+    
+    #blogs{
+ 
+      grid-area: blogs;
+        height: auto;
+      border-radius: var(--main-radius);
+      padding: var(--main-padding);
+      }
+      
+
+
+body{
+    background-color: azure;
+    font-family: 'Open Sans',sans-serif;
+}
+h2
+{
+    text-align: center;
+    color: rgb(67, 86, 227);
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    color: #66436e;
+    background-color: #d8cbdb;
+
+
+}
+h3{
+  text-align: center;
+}
+
+a{
+  position:static;
+    color: rgb(2, 8, 94);
+    text-decoration: none;
+    align-items: center; 
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    margin-left:auto;
+      }
+
+      a:hover {
+
+        background-color: #66436e;
+        color: rgb(223, 219, 219);
+      }
+
+    
+  #Gallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+#img{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  padding-left: 5em;
+  margin: 0px 10px 30px 20px;
+}
+@media only screen and (max-width:500px)
+{
+  .container
+  {
+
+    grid-template-columns:1fr;
+    grid-template-rows:1.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    grid-area: 
+    "navbar"
+    "profile pic"
+    "about"
+    "papers"
+    "experience"
+    "Hobbies"
+    "Gallery"
+    "blogs";
+
+    gap: 0.4em;
+
+  }
+  .navbar{
+    display: grid;
+    height:max-content;
+  }
+ #Gallery
+ {
+   align-items: center;
+ }
+
+}
